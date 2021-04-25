@@ -1,0 +1,226 @@
+body {
+  background-image: linear-gradient(to right, #2193b0, #6dd5ed);
+  transition: 0.3s;
+}
+h2{
+  color: white;
+}
+@font-face{
+  font-family: sans;
+  src: url("../fonts/product-sans.ttf")
+}
+*{
+  font-family: sans;
+}
+fieldset{
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px 16px 8px 16px;
+  border-radius: 10px;
+  background-image: url("../images/bgm.png");
+  background-size: cover;
+  height: 970px;
+  width: 440px;
+  border: 0px;
+  /* box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px; */
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; 
+  /* box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+; */
+
+}
+legend{
+  padding: 2px;
+}
+select{
+  border: none;
+  border-bottom: 2px solid #408534;
+  outline: none;
+  width: 88.5%;
+  background-color: #FFFFFF;
+}
+.home{
+  height: 40px;
+  width: 45px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.logo{
+  height: 80px;
+  width: 80px;
+}
+.small-container{
+  display: flex;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  padding: 5px;
+}
+.icons{
+  height: 35px;
+  width: 35px;
+}
+input{
+  padding: 8px;
+  outline: none;
+  background-color: #FFFFFF;
+  border: 0px solid #1021DA;
+  width: 85%;
+  font-size: 16px;
+  border-bottom: 2px solid #408534;
+  transition: 0.3s
+}
+input:hover{
+  border-bottom: 2px solid #0099FF;
+}
+.large{
+  font-size: 40px;
+  font-weight: bolder;
+  color: white;
+}
+.small{
+  font-size: 15px;
+  color: white;
+}
+.data-container{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  padding: 8px;
+  background-color: white;
+  border-radius: 10px;
+}
+.ok{
+  width: 100%;
+  margin: 15px 5px 4px 5px;
+  padding: 16px;
+  border-radius: 100px;
+  border: 2px dotted #408534;
+  color: #ffffff;
+  background-color: #408534;
+  font-size: 10px;
+  outline: none;
+  transition: 0.5s;
+}
+.ok:hover{
+  background-color: #ffffff;
+  color: #408534;
+}
+.cancel{
+  width: 100%;
+  margin: 0px 5px 0px 5px;
+  padding: 16px;
+  border-radius: 100px;
+  border: 2px solid #408543;
+  color: #408534;
+  background-color: #ffffff;
+  font-size: 10px;
+  outline: none;
+  transition: 0.5s;
+}
+.cancel:hover{
+  background-color: #607D8B;
+  color: #ffffff;
+  border: 2px solid #607D8B;
+}
+/* Managing widths for my android device */
+@media only screen and (max-width: 768px){
+  fieldset{
+    width: 340px;
+    height: 970px;
+  }
+}
+.container {
+  display: block;
+  position: relative;
+  margin-left: 20px;
+  padding-left: 35px;
+  margin-top: 13px;
+  margin-bottom: px;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's def"ault radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 17px;
+  width: 17px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #408543;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  margin: 4px 0 0 4px;
+ 	padding: 3px;
+	width: 2px;
+	height: 2px;
+	border-radius: 50%;
+	background: white;
+}
+.bottom-container {
+  margin-top: 30px;
+  display: block;
+  text-align: center;
+}
+.social-links{
+  filter: brightness(0) invert(1);
+  height: 40px;
+  width: 40px;
+  margin: 5px;
+}
+.date{
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+#time{
+  color: white;
+ margin-left: 5px;
+}
+#theme{
+  float: right;
+  margin-top: 12px;
+  padding-bottom: 20px;
+  height: 30px;
+  width: 30px;
+}
