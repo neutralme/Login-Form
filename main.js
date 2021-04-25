@@ -30,11 +30,11 @@ function process(a){
 }
 function eyes(){
   if (pwd.type === "password"){
-    image.src = "/images/eye-open.png";
+    image.src = "images/eye-open.png";
     pwd.type = "text";
   } else {
     pwd.type = "password";
-    image.src = "/images/eye-closed.png";
+    image.src = "images/eye-closed.png";
   }
 }
 function changeTheme(){
@@ -43,15 +43,15 @@ function changeTheme(){
   dc = document.getElementById('data-container');
   if (dark == 0){
     dark = 1;
-    theme.src = "/images/dark.png";
+    theme.src = "images/dark.png";
     body.style = "background-image: linear-gradient(to right, #000000, #000000);";
     dc.style = "background-color: #000000;";
     fieldset.style = "background-image: linear-gradient(to right, #000000, #000000); border: 2px solid #ffffff; box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;";
   } else {
     dark = 0
-    theme.src = "/images/light.png";
+    theme.src = "images/light.png";
     body.style = "background-image: linear-gradient(to right, #2193b0, #6dd5ed);";
-    fieldset.style = "background-image: url('/images/bgm.png'); background-size: cover;";
+    fieldset.style = "background-image: url('images/bgm.png'); background-size: cover;";
     dc.style = "background-color: #ffffff;";
   }
 }
