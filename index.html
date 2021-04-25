@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Login Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+  <img src="images/home-logo.png" class="home">
+  <center><h2>New Horizon Institute</h2></center>
+  <fieldset id="fieldset">
+    <legend><img src="images/school.png" class="logo"></legend>
+    <img src="images/light.png" id="theme" onclick="changeTheme();">
+    <label class="large">Registration</label><br><br>
+    <span class="date"><img src="images/cal.png" style="height: 25px; width: 25px;"><span id="tday" style="color: white; margin-left: 5px;"></span><img src="images/clock.png" style="height: 22px; width: 22px; margin-left: 10px;"><span id="time"></span></span><br>
+    <label class="small">ONE OF THE FINEST INSTITUTE IN NEPAL</label><br><br>
+    <form>
+    <div class="data-container" id="data-container">
+    <div class="small-container"><img src="images/name.png" class="icons"><input type="text" name="username" placeholder="Student's Name" required></div><br>
+    <div class="small-container"><img src="images/location.png" class="icons"><input type="text" name="address" placeholder="Address" required></div><br>
+    <div class="small-container"><img src="images/phone.png" class="icons"><input type="number" name="number" placeholder="Phone No." required></div><br>
+    <div class="small-container"><img src="images/dob.png" class="icons"><input type="text" name="date" placeholder="Date Of Birth (YYYY/MM/DD)" required></div><br>
+    <div class="small-container"><img src="images/class.png" class="icons">
+    <select>
+      <option>Montessori/Pre-Nursery</option>
+      <option>Nursery</option>
+      <option>LKG</option>
+      <option>UKG</option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>
+      <option>7</option>
+      <option>8</option>
+      <option>9</option>
+      <option>10 (Science/Management)</option>
+      <option>11 (Science/Management)</option>
+    </select>
+    </div><br>
+    <div class="small-container"><img src="images/gender.png" class="icons">
+    <div class="container"><input type="radio" name="gender" value="Male" required>Male <span class="checkmark"></span></div>
+    <div class="container"><input type="radio" name="gender" value="female" required>Female <span class="checkmark"></span></div></div><br>
+    <div class="small-container"><img src="images/mail.png" class="icons"><input type="text" name="address" placeholder="E-Mail" required></div><br>
+    <div class="small-container"><img src="images/pwd.png" class="icons"><input type="password" name="password" placeholder="Create a password" required id="password"><img src="images/eye-closed.png" id="eye" onclick="eyes();" class="icons" style="transition: 0.5s"></div><br>
+    </div>
+    <button class="ok" id="ok" onclick="formcheck()">REGISTER</button><br>
+    </form>
+    <button class="cancel">ASK FOR HELP</button>
+    <span style="text-align: center; display: block; color: grey; margin-top: 15px;">Terms and Conditions</span>
+    <hr style="border-radius: 200px; background-color: grey; border: 0px; width: 100px; height: 2px;">
+  </fieldset>
+  <div class="bottom-container">
+    <img src="images/facebook.png" class="social-links" title="Facebook" onclick="window.open("https://facebook.com", "_blank");"><img src="images/insta.png" class="social-links" title="Instagram" onclick="window.open("https://.com", "_blank");"><img src="images/reddit.png" class="social-links" title="Reddit" onclick="window.open("https://.com", "_blank");"><img src="images/linked.png" class="social-links" title="Linked-In"onclick="window.open("https://.com", "_blank");"><img src="images/twitter.png" class="social-links" title="Twitter" onclick="window.open("https://.com", "_blank");">
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
