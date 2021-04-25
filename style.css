@@ -7,7 +7,7 @@ h2{
 }
 @font-face{
   font-family: sans;
-  src: url("../fonts/product-sans.ttf")
+  src: url("fonts/product-sans.ttf")
 }
 *{
   font-family: sans;
@@ -17,7 +17,7 @@ fieldset{
   margin-right: auto;
   padding: 8px 16px 8px 16px;
   border-radius: 10px;
-  background-image: url("../images/bgm.png");
+  background-image: url("images/bgm.png");
   background-size: cover;
   height: 970px;
   width: 440px;
